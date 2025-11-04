@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchYou</title>
+    <link rel="stylesheet" th:href="@{/css/start.css}">
+</head>
+<body>
+<main class="start-screen">
+    <div class="content-container">
+        <img th:src="@{/asset/search_icon.png}" alt="돋보기 아이콘" class="search-icon">
+        <p class="description">
+            <span class="highlight">무료</span>로 쉽게, <span class="highlight">온라인</span>으로 편하게<br>
+            <span class="highlight">퍼스널컬러</span>를 측정해보세요!
+        </p>
+        <button id="startButton" class="start-button">시작하기</button>
+    </div>
+</main>
+
+<script th:src="@{/js/start.js}"></script>
+</body>
+</html>

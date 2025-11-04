@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchYou</title>
+    <link rel="stylesheet" th:href="@{/css/image.css}">
+</head>
+<body>
+<main class="upload-screen">
+    <div class="content-container">
+        <div class="file-upload-area">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <label for="imageUpload" class="file-select-button">파일 선택</label>
+        </div>
+
+        <p class="guide-text">
+            <span class="highlight">화장</span>을 지우고 <span class="highlight">안경</span>과 <span class="highlight">렌즈</span>, <span class="highlight">마스크</span>는 뺀 뒤<br>
+            <span class="highlight">밝은 곳</span>에서 <span class="highlight">정면</span>으로 촬영한 사진을<br>
+            올려주세요.
+        </p>
+
+        <button id="measureButton" class="measure-button" disabled>
+            퍼스널컬러 측정하기
+        </button>
+    </div>
+</main>
+
+<script th:src="@{/js/image.js}"></script>
+</body>
+</html>

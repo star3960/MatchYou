@@ -1,0 +1,134 @@
+:root {
+    --primary-pink: #FF399F;;
+    --text-color: #333333;
+    --light-gray: #EDEDED;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 당신의 퍼스널컬러는 */
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* 메인 결과 */
+.main-result-section {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* 아이콘 */
+.color-icon {
+    width: 280px;
+    height: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.no1-color-text {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--primary-pink);
+    margin-top: 10px;
+}
+
+/* 퍼센티지 바 */
+.percentage-bars {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+}
+
+.color-label {
+    width: 100px;
+    font-weight: 400;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.bar-wrapper {
+    flex-grow: 1;
+    height: 15px;
+    background-color: var(--light-gray);
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.percentage-bar {
+    height: 100%;
+    border-radius:25px;
+    background-color: var(--primary-bar-color);
+    transition: width 0.3s ease;
+}
+
+.percentage-text {
+    width: 0px;
+    color: var(--primary-pink);
+    text-align: right;
+    font-size: 1em;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+/* 측정 근거 */
+.reason-section {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reason-bubble {
+    position: relative;
+    background-color: #FFEBF5;
+
+    border-radius: 10px;
+
+    padding: 20px;
+    text-align: left;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.reason-content {
+    padding-left: 5px;
+    font-size: 1em;
+    line-height: 1.8em;
+    white-space: pre-wrap;
+    margin: 0;
+    text-align: left;
+}
