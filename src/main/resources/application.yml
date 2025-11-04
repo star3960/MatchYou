@@ -1,0 +1,7 @@
+# Gemini
+gemini:
+  model:
+    name: gemini-2.5-flash
+  api:
+    url: https://generativelanguage.googleapis.com/v1beta/
+    key: 

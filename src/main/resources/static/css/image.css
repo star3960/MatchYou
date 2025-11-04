@@ -1,0 +1,135 @@
+/* 색상 변수 정의 */
+:root {
+    --primary-pink: #FF399F;
+    --text-color: #333333;
+    --gray-button: #ABABAB;
+    --gray-button-text: #FFFFFF;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+}
+
+.upload-screen {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-5vh);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 파일 업로드 전 */
+.file-upload-area {
+    width: 60vw;
+    height: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 파일 업로드 후 */
+.file-upload-area.file-selected {
+    border: 2px solid var(--primary-pink);
+}
+
+.file-name {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    z-index: 10;
+    margin-right: 10px;
+    z-index: 10;
+
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-select-button {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-select-button:hover {
+    background-color: #E01F83;
+}
+
+.guide-text {
+    font-size: 1em;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 5vh;
+    font-weight: 400;
+}
+
+.guide-text .highlight {
+    color: var(--primary-pink);
+}
+
+/* 퍼스널컬러 측정 버튼 비활성화 */
+.measure-button {
+    background-color: var(--gray-button);
+    color: var(--gray-button-text);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 50px;
+    font-size: 1.1em;
+
+    cursor: not-allowed;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* 퍼스널컬러 측정 버튼 활성화 */
+.measure-button.active {
+    background-color: var(--primary-pink);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.measure-button.active:hover {
+    background-color: #E01F83;
+}
+
+@media (min-width: 600px) {
+    .guide-text {
+        font-size: 1.1em;
+    }
+}

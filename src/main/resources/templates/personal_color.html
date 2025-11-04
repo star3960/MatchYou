@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchYou</title>
+    <link rel="stylesheet" th:href="@{/css/personal_color.css}">
+</head>
+<body>
+<div class="container">
+    <h2 class="title">당신의 퍼스널컬러는</h2>
+
+    <div class="main-result-section">
+        <img id="personal-color-icon" src="" alt="퍼스널 컬러 아이콘" class="color-icon">
+        <p id="no1-color-text" class="no1-color-text">봄 브라이트</p>
+    </div>
+
+    <div class="percentage-bars" id="percentage-bars-container">
+    </div>
+
+    <div class="reason-section">
+        <div class="reason-bubble">
+            <p id="reason-content" class="reason-content">측정 근거</p>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/js/personal_color.js}"></script>
+</body>
+</html>
