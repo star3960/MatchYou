@@ -4,4 +4,4 @@ gemini:
     name: gemini-2.5-flash
   api:
     url: https://generativelanguage.googleapis.com/v1beta/
-    key: AIzaSyDl9QboQ0e0031BxK7G9eN4aFvyW4yrwHk
+    key: ${GEMINI_KEY}

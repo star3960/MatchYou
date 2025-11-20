@@ -73,7 +73,7 @@ public class GeminiRequestDTO {
         this.generationConfig = new GenerationConfig();
         this.generationConfig.setCandidate_count(1);
         this.generationConfig.setMax_output_tokens(5000);
-        this.generationConfig.setTemperature(0.6);
+        this.generationConfig.setTemperature(0.4);
     }
 
 }
